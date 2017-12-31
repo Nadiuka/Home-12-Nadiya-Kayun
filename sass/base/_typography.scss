@@ -1,0 +1,26 @@
+body {
+    font-family: $font-stack;
+    color: $first-color;
+}
+
+h1 {
+    font-family: $second-font;
+    color: $third-color;
+}
+
+h2 {
+    font-family: $second-font;
+    color: $first-color;
+}
+
+.navigation-menu {
+    a {
+        color: $second-color;
+    }
+}
+
+.main-header {
+    span {
+        font-family: $third-font;
+    }
+}

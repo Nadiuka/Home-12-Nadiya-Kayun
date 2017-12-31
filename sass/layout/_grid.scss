@@ -1,0 +1,12 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}

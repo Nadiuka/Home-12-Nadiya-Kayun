@@ -1,0 +1,126 @@
+.navigation-menu {
+    background-color: #df001f;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px 5px 68px;
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navigation-items, .navigation-icons {
+    display: flex;
+    align-items: center;
+
+    li {
+        padding: 0 5px;
+    }
+
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.navigation-items {
+    a {
+        font-size: 13px;
+        line-height: 44px;
+        font-weight: 700;
+        padding: 0 5px;
+
+        &:hover {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.navigation-icons {
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 0 5px;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+.navigation-button {
+    a {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 20px 44px;
+        border-radius: 25px;
+        background-color: white;
+        color: $third-color;
+        transition: 0.7s;
+
+        &:hover {
+            transition: 0.7s;
+            color: $first-color
+        }
+    }
+}
+
+.main-foto {
+    position: relative;
+    border-bottom: 3px solid $third-color;
+
+    .flexslider {
+        margin: 0;
+        border: none;
+    }
+
+    .flex-direction-nav {
+        display: none;
+    }
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-header {
+    span {
+        font-size: 60px;
+        font-style: italic;
+    }
+
+    .header-button {
+        margin-top: 54px;
+    }
+
+    a {
+        border-radius: 25px;
+        background-color: #df001f;
+        padding: 20px 32px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        color: $second-color;
+        transition: 0.7s;
+        border: 1px solid $third-color;
+
+        &:hover {
+            transition: 0.7s;
+            color: $third-color;
+            background-color: white;
+        }
+    }
+}

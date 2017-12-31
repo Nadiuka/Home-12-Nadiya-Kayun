@@ -1,0 +1,374 @@
+.introducing {
+    padding: 100px 0 0 0;
+}
+
+.introducing-members {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.angle {
+    display: flex;
+    justify-content: flex-end;
+
+    i {
+        width: 35px;
+        height: 35px;
+        background-color: #df001f;
+        padding: 5px;
+        color: $second-color;
+        margin: 10px 4px;
+        text-align: center;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+
+    span {
+        font-family: $third-font;
+        color: #df001f;
+        font-size: 32px;
+        font-weight: 400;
+        display: inherit;
+    }
+}
+
+.members {
+    //display: flex;
+    //justify-content: space-between;
+
+    .members-item {
+        position: relative;
+
+        &:hover .active-icon {
+            display: block;
+        }
+    }
+}
+
+.name-members {
+    background-color: #df001f;
+    padding: 17px 24px 24px 27px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    h3 {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $second-color;
+        font-family: $second-font;
+        margin: 3px 0;
+    }
+
+    span {
+        font-size: 16px;
+        color: $second-color;
+        font-weight: 400;
+    }
+
+    .active-icon {
+        display: none;
+        margin-top: 25px;
+
+        li {
+            float: left;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-right: 10px;
+        }
+
+        i {
+            padding-right: 10px;
+        }
+    }
+}
+
+.concert-and-videos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.upcoming-concert {
+    border-bottom: 4px solid #e9e9e9;
+}
+
+.concert-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-foto-concert {
+    margin-top: 40px;
+    position: relative;
+
+    .data {
+        position: absolute;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        left: 100px;
+
+        span {
+            font-family: $second-font;
+            font-size: 45px;
+            font-weight: 400;
+            color: $second-color;
+        }
+    }
+}
+
+.table {
+    padding: 30px 80px;
+    max-height: 290px;
+    margin-top: 20px;
+
+    td {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        padding-right: 5px;
+    }
+
+    .purchase-ticket {
+        margin-top: 30px;
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: $second-color;
+        border-radius: 25px;
+        background-color: #df001f;
+        padding: 20px 40px;
+        transition: 0.7s;
+        border: 1px solid $third-color;
+
+        &:hover {
+            transition: 0.7s;
+            color: $third-color;
+            background-color: white;
+        }
+    }
+}
+
+.slider-videos {
+    width: 372px;
+    max-width: 100%;
+}
+
+.wrapper {
+    padding: 100px 0;
+}
+
+.history {
+    background-color: #333333;
+    display: flex;
+    justify-content: flex-end;
+
+    .about-history {
+        padding: 20px 0 40px 100px;
+
+        .learn-more {
+            margin-top: 40px;
+        }
+
+        a {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: $third-color;
+            transition: 0.7s;
+            border-radius: 25px;
+            background-color: #ffffff;
+            padding: 20px 40px;
+
+            &:hover {
+                transition: 0.7s;
+                color: $second-color;
+                background-color: #df001f;
+            }
+        }
+    }
+
+    p {
+        color: $second-color;
+    }
+
+    .our-founder {
+        font-family: $second-font;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    .start {
+        font-size: 18px;
+        font-weight: 400;
+
+        span {
+            font-family: $third-font;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+}
+
+.songs-instagram {
+    display: flex;
+    justify-content: space-between;
+
+    .songs {
+        margin-top: 40px;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+        column-gap: 90px;
+
+        li {
+            transition: 0.5s;
+            border-bottom: 1px solid #999999;
+
+            &:hover {
+                transition: 0.5s;
+                color: $third-color;
+            }
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40px;
+            color: $first-color;
+
+            &:hover {
+                transition: 0.5s;
+                color: $third-color;
+            }
+        }
+    }
+
+    .instagram-feed {
+        li {
+            float: left;
+            padding: 10px;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.app {
+    background: url("../img/app-foto.png") no-repeat scroll center/cover;
+    padding: 80px 0 100px 0;
+    text-align: center;
+    margin-top: 90px;
+
+    p {
+        color: $second-color;
+        margin: 0;
+    }
+
+    .download-app {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 48px;
+        font-family: $second-font;
+    }
+
+    .listening {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+.icon-app {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    li {
+        padding: 5px;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+    }
+
+    img {
+        max-width: 162px;
+        max-height: 50px;
+    }
+}
+
+.wrapper-popup {
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrapper-popup.show {
+    display: block;
+}
+
+.popup {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+
+    p {
+        font-size: 16px;
+        font-weight: 200;
+        margin: 0;
+        text-align: center;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        transition: 0.7s;
+        background-color: #ffffff;
+        padding: 5px;
+        position: absolute;
+        right: 5px;
+        top: 0;
+
+        &:hover {
+            transition: 0.7s;
+            opacity: 0.7;
+        }
+    }
+}
