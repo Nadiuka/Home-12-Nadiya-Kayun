@@ -1,3 +1,6 @@
+<?php
+$data = require 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,20 +18,36 @@
     <div class="navigation-menu">
         <nav>
             <ul class="navigation-items clearfix">
-                <li><a href="#">home</a></li>
-                <li><a href="#">events</a></li>
-                <li><a href="#">gallery</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">albums</a></li>
-                <li><a href="#">pages</a></li>
+                <?php
+                foreach ($data['mainMenu'] as $menuItem) {
+                    ?>
+                    <li>
+                        <a href="<?php echo $menuItem['url']; ?>"><?php echo $menuItem['title']; ?></a>
+                    </li>
+                    <?php
+                }
+                ?>
             </ul>
         </nav>
-        <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="logo">
+            <a href="#"><img src="<?php echo $data['siteLogo']['src']; ?>"
+                             alt="<?php echo $data['siteLogo']['alt']; ?>"></a>
+        </div>
         <ul class="navigation-icons clearfix">
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>55k</a></li>
-            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>23k</a></li>
-            <li class="navigation-button"><a href="#">purchase Ticket</a></li>
+            <?php
+            foreach ($data['socialLinks'] as $linkItem) {
+                ?>
+                <li>
+                    <a href="<?php echo $linkItem['url']; ?>"><i class="fa <?php echo $linkItem['class']; ?>"
+                                                                 aria-hidden="true"></i><?php echo $linkItem['count']; ?>
+                    </a>
+                </li>
+                <?php
+            }
+            ?>
+            <li class="navigation-button"><a
+                        href="<?php echo $data['buttonBuy']['url']; ?>"><?php echo $data['buttonBuy']['title']; ?></a>
+            </li>
         </ul>
     </div>
     <div class="main-foto">
