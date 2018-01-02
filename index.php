@@ -53,17 +53,25 @@ $data = require 'data.php';
     <div class="main-foto">
         <div class="flexslider slider-header-fotos">
             <ul class="slides">
-                <li><img src="img/main-foto.png" alt="main-foto"></li>
-                <li><img src="img/foto-header2.png" alt="foto-header2"></li>
-                <li><img src="img/foto-header3.png" alt="foto-header3"></li>
+                <?php
+                foreach ($data['mainPhoto'] as $mainPhotoItem) {
+                    ?>
+                    <li>
+                        <img src="<?php echo $mainPhotoItem['src']; ?>" alt="<?php $mainPhotoItem['alt']; ?>"
+                    </li>
+                <?php
+                }
+                ?>
             </ul>
         </div>
         <div class="header">
             <div class="container">
                 <div class="main-header">
-                    <h1>Let’s Rock</h1>
-                    <span>With Cantus</span>
-                    <div class="header-button"><a href="#">DISCOVER MORE</a></div>
+                    <h1><?php echo $data['mainHeader']; ?></h1>
+                    <span><?php echo $data['mainHeaderSpan']; ?></span>
+                    <div class="header-button">
+                        <a href="<?php echo $data['headerButton']['url']; ?>"><?php echo $data['headerButton']['title']; ?></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,10 +79,17 @@ $data = require 'data.php';
 </header>
 <section class="introducing">
     <div class="container introducing-members">
-        <h2>INTRODUCING<span>Our Members</span></h2>
+        <h2><?php echo $data['secondHeader']; ?><span><?php echo $data['secondHeaderSpan']; ?></span></h2>
         <div id="slider-members-controls" class="angle clearfix">
-            <a href="#" class="flex-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a href="#" class="flex-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <?php
+            foreach ($data['sliderControls'] as $sliderControlsItem) {
+                ?>
+                <a href="<?php echo $sliderControlsItem['url']; ?>" class="<?php echo $sliderControlsItem['class']; ?>">
+                    <i class="fa <?php echo $sliderControlsItem['classAngle']; ?>" aria-hidden="true"></i>
+                </a>
+            <?php
+            }
+            ?>
         </div>
         <div class="flexslider slider-members">
             <ul class="members slides">
