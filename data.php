@@ -304,4 +304,64 @@ return [
             ],
         ],
     ],
+    'fourthHeader' => 'UPCOMING',
+    'fourthHeaderSpan' => 'Concert',
+    'concertPhoto' => [
+        'src' => 'img/concert-foto.png',
+        'alt' => 'foto-concert',
+    ],
+    'concertData' => '13',
+    'concertMonth' => 'Jan',
+    'tableHeader' => 'Texas Rocks nation 2016',
+    'concertInfo' => [
+        [
+            'title' => 'Location',
+            'colon' => ':',
+            'info' => '31 Great Smith Street, UK',
+        ],
+        [
+            'title' => 'Date',
+            'colon' => ':',
+            'info' => 'July 13, 2017',
+        ],
+        [
+            'title' => 'Time',
+            'colon' => ':',
+            'info' => '10:00 AM',
+        ],
+        [
+            'title' => 'Price',
+            'colon' => ':',
+            'info' => '$40',
+        ],
+    ],
+    'purchaseTicketButton' => [
+        'url' => '#',
+        'title' => 'purchase Ticket',
+    ],
+    'fifthHeader' => 'LATEST',
+    'fifthHeaderSpan' => 'Videos',
+    'slidesVideos' => [
+        [
+            'src' => 'https://www.youtube.com/embed/wtx5jiDEvJc',
+        ],
+        [
+            'src' => 'https://www.youtube.com/embed/2Asz11cD9GI',
+        ],
+        [
+            'src' => 'https://www.youtube.com/embed/n4RjJKxsamQ',
+        ],
+    ],
+    'history' => 'Our Founder staying in our hearts',
+    'historyStartDate' => '1982',
+    'historyStart' => 'Start jurny and now it‘s top class Rock Band in the California.',
+    'historyStartSpan' => 'cantus',
+    'learnMoreButton' => [
+        'url' => '#',
+        'title' => 'learn more',
+    ],
+    'historyPhoto' => [
+        'src' => 'img/history-foto.png',
+        'alt' => 'history-foto',
+    ],
 ];

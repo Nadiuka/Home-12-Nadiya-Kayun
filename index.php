@@ -59,7 +59,7 @@ $data = require 'data.php';
                     <li>
                         <img src="<?php echo $mainPhotoItem['src']; ?>" alt="<?php $mainPhotoItem['alt']; ?>"
                     </li>
-                <?php
+                    <?php
                 }
                 ?>
             </ul>
@@ -87,138 +87,42 @@ $data = require 'data.php';
                 <a href="<?php echo $sliderControlsItem['url']; ?>" class="<?php echo $sliderControlsItem['class']; ?>">
                     <i class="fa <?php echo $sliderControlsItem['classAngle']; ?>" aria-hidden="true"></i>
                 </a>
-            <?php
+                <?php
             }
             ?>
         </div>
         <div class="flexslider slider-members">
             <ul class="members slides">
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/jone.png" alt="jone">
-                        <div class="name-members">
-                            <h3>Jone smith</h3>
-                            <span>Vocal</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/rendi.png" alt="rendi">
-                        <div class="name-members">
-                            <h3>Rendi Outhor</h3>
-                            <span>Drum</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/renes.png" alt="renes">
-                        <div class="name-members">
-                            <h3>Renes Odim</h3>
-                            <span>Guiter</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/jone.png" alt="jone">
-                        <div class="name-members">
-                            <h3>Jone smith</h3>
-                            <span>Vocal</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/rendi.png" alt="rendi">
-                        <div class="name-members">
-                            <h3>Rendi Outhor</h3>
-                            <span>Drum</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/renes.png" alt="renes">
-                        <div class="name-members">
-                            <h3>Renes Odim</h3>
-                            <span>Guiter</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/jone.png" alt="jone">
-                        <div class="name-members">
-                            <h3>Jone smith</h3>
-                            <span>Vocal</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/rendi.png" alt="rendi">
-                        <div class="name-members">
-                            <h3>Rendi Outhor</h3>
-                            <span>Drum</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="members-item">
-                    <a href="#">
-                        <img src="img/renes.png" alt="renes">
-                        <div class="name-members">
-                            <h3>Renes Odim</h3>
-                            <span>Guiter</span>
-                            <ul class="clearfix active-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>32k</a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>32k</a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
+                <?php
+                foreach ($data['members'] as $membersItem) {
+                    ?>
+                    <li class="members-item">
+                        <a href="<?php echo $membersItem['url']; ?>">
+                            <img src="<?php echo $membersItem['src']; ?>" alt="<?php echo $membersItem['alt']; ?>">
+                            <div class="name-members">
+                                <h3><?php echo $membersItem['thirdHeader']; ?></h3>
+                                <span><?php echo $membersItem['thirdHeaderSpan']; ?></span>
+                                <ul class="clearfix active-icon">
+                                    <?php
+                                    foreach ($membersItem['activeIcon'] as $activeIconItem) {
+                                        ?>
+                                        <li>
+                                            <a href="<?php echo $activeIconItem['url']; ?>">
+                                                <i class="fa <?php echo $activeIconItem['class']; ?>"
+                                                   aria-hidden="true"></i>
+                                                <?php echo $activeIconItem['title']; ?>
+                                            </a>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <?php
+                }
+                ?>
             </ul>
         </div>
     </div>
@@ -226,63 +130,66 @@ $data = require 'data.php';
 <div>
     <div class="container concert-and-videos">
         <section class="upcoming-concert">
-            <h2>UPCOMING<span>Concert</span></h2>
+            <h2><?php echo $data['fourthHeader']; ?><span><?php echo $data['fourthHeaderSpan']; ?></span></h2>
             <div class="concert-info">
                 <div class="main-foto-concert">
-                    <div class="concert-foto"><img src="img/concert-foto.png" alt="foto-concert"></div>
+                    <div class="concert-foto">
+                        <img src="<?php echo $data['concertPhoto']['src']; ?>"
+                             alt="<?php echo $data['concertPhoto']['alt']; ?>">
+                    </div>
                     <div class="data">
-                        <span>13</span>
-                        <span>Jan</span>
+                        <span><?php echo $data['concertData']; ?></span>
+                        <span><?php echo $data['concertMonth']; ?></span>
                     </div>
                 </div>
                 <div class="table">
-                    <h3>Texas Rocks nation 2016</h3>
+                    <h3><?php echo $data['tableHeader']; ?></h3>
                     <table>
-                        <tr>
-                            <td>Location</td>
-                            <td>:</td>
-                            <td>31 Great Smith Street, UK</td>
-                        </tr>
-                        <tr>
-                            <td>Date</td>
-                            <td>:</td>
-                            <td>July 13, 2017</td>
-                        </tr>
-                        <tr>
-                            <td>Time</td>
-                            <td>:</td>
-                            <td>10:00 AM</td>
-                        </tr>
-                        <tr>
-                            <td>Price</td>
-                            <td>:</td>
-                            <td>$40</td>
-                        </tr>
+                        <?php
+                        foreach ($data['concertInfo'] as $concertInfoItem) {
+                            ?>
+                            <tr>
+                                <td><?php echo $concertInfoItem['title']; ?></td>
+                                <td><?php echo $concertInfoItem['colon']; ?></td>
+                                <td><?php echo $concertInfoItem['info']; ?></td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
                     </table>
-                    <div class="purchase-ticket"><a href="#">purchase Ticket</a></div>
+                    <div class="purchase-ticket">
+                        <a href="<?php echo $data['purchaseTicketButton']['url']; ?>"><?php echo $data['purchaseTicketButton']['title']; ?></a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="latest-videos">
-            <h2>LATEST<span>Videos</span></h2>
+            <h2><?php echo $data['fifthHeader']; ?><span><?php echo $data['fifthHeaderSpan']; ?></span></h2>
             <div id="slider-video-controls" class="angle clearfix">
-                <a href="#" class="flex-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                <a href="#" class="flex-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <?php
+                foreach ($data['sliderControls'] as $sliderControlsItem) {
+                    ?>
+                    <a href="<?php echo $sliderControlsItem['url']; ?>"
+                       class="<?php echo $sliderControlsItem['class']; ?>">
+                        <i class="fa <?php echo $sliderControlsItem['classAngle']; ?>" aria-hidden="true"></i>
+                    </a>
+                    <?php
+                }
+                ?>
             </div>
             <div class="flexslider slider-videos">
                 <ul class="slides videos">
-                    <li>
-                        <iframe width="372" height="290" src="https://www.youtube.com/embed/wtx5jiDEvJc" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </li>
-                    <li>
-                        <iframe width="372" height="290" src="https://www.youtube.com/embed/2Asz11cD9GI" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </li>
-                    <li>
-                        <iframe width="372" height="290" src="https://www.youtube.com/embed/n4RjJKxsamQ" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </li>
+                    <?php
+                    foreach ($data['slidesVideos'] as $slidesVideosItem) {
+                        ?>
+                        <li>
+                            <iframe width="372" height="290" src="<?php echo $slidesVideosItem['src']; ?>"
+                                    frameborder="0"
+                                    gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </li>
+                        <?php
+                    }
+                    ?>
                 </ul>
             </div>
         </section>
@@ -291,12 +198,18 @@ $data = require 'data.php';
 <div class="wrapper">
     <div class="container history">
         <div class="about-history">
-            <p class="our-founder">Our Founder staying in our hearts</p>
-            <p class="start">1982 <span>cantus</span> Start jurny and now it‘s top class Rock Band in the California.
+            <p class="our-founder"><?php echo $data['history']; ?></p>
+            <p class="start"><?php echo $data['historyStartDate']; ?>
+                <span><?php echo $data['historyStartSpan']; ?></span> <?php echo $data['historyStart']; ?>
             </p>
-            <div class="learn-more"><a href="#" class="open-popup">learn more</a></div>
+            <div class="learn-more">
+                <a href="<?php echo $data['learnMoreButton']['url']; ?>"
+                   class="open-popup"><?php echo $data['learnMoreButton']['title']; ?></a>
+            </div>
         </div>
-        <div><img src="img/history-foto.png" alt="history-foto"></div>
+        <div>
+            <img src="<?php echo $data['historyPhoto']['src']; ?>" alt="<?php echo $data['historyPhoto']['alt']; ?>">
+        </div>
     </div>
 </div>
 <div>
