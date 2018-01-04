@@ -215,48 +215,65 @@ $data = require 'data.php';
 <div>
     <div class="container songs-instagram">
         <section class="popular-songs">
-            <h2>POPULAR<span>Songs</span></h2>
+            <h2><?php echo $data['sixthHeader']; ?><span><?php echo $data['sixthHeaderSpan']; ?></span></h2>
             <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/80451631&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+                    src="<?php echo $data['audio']['src']; ?>"></iframe>
             <ol class="songs">
-                <li><a href="#">My heart is dancing</a></li>
-                <li><a href="#">Good day</a></li>
-                <li><a href="#">Life for rent</a></li>
-                <li><a href="#">Hello It’s me</a></li>
-                <li><a href="#">My heart is dancing</a></li>
-                <li><a href="#">Good day</a></li>
-                <li><a href="#">Life for rent</a></li>
-                <li><a href="#">Hello It’s me</a></li>
-                <li><a href="#">My heart is dancing</a></li>
-                <li><a href="#">Good day</a></li>
-                <li><a href="#">Life for rent</a></li>
-                <li><a href="#">Hello It’s me</a></li>
+                <?php
+                foreach ($data['songs'] as $songItem) {
+                    ?>
+                    <li>
+                        <a href="<?php echo $songItem['url']; ?>"><?php echo $songItem['title']; ?></a>
+                    </li>
+                    <?php
+                }
+                ?>
             </ol>
         </section>
         <section class="instagram-feed">
-            <h2>Instagram<span>Feed</span></h2>
+            <h2><?php echo $data['seventhHeader']; ?><span><?php echo $data['seventhHeaderSpan']; ?></span></h2>
             <ul class="clearfix">
-                <li><img src="img/instagram-foto1.png" alt="instagram-foto"></li>
-                <li><img src="img/instagran-foto2.png" alt="instagram-foto"></li>
+                <?php
+                foreach ($data['instagramPhotos'] as $instagramPhotoItem) {
+                    ?>
+                    <li>
+                        <img src="<?php echo $instagramPhotoItem['src']; ?>"
+                             alt="<?php echo $instagramPhotoItem['alt']; ?>">
+                    </li>
+                    <?php
+                }
+                ?>
             </ul>
             <ul class="clearfix">
-                <li><img src="img/instagram-foto3.png" alt="instagram-foto"></li>
-                <li><img src="img/instagram-foto4.png" alt="instagram-foto"></li>
+                <?php
+                foreach ($data['moreInstagramPhotos'] as $moreInstagramPhotoItem) {
+                    ?>
+                    <li>
+                        <img src="<?php echo $moreInstagramPhotoItem['src']; ?>"
+                             alt="<?php echo $moreInstagramPhotoItem['alt']; ?>">
+                    </li>
+                    <?php
+                }
+                ?>
             </ul>
         </section>
     </div>
 </div>
 <div>
     <div class="container app">
-        <p class="download-app">Download Our Official Apps</p>
-        <p class="listening">Never stop listening. Take your playlists and likes wherever you go.</p>
+        <p class="download-app"><?php echo $data['downloadApp']; ?></p>
+        <p class="listening"><?php echo $data['listening']; ?></p>
         <ul class="icon-app">
-            <li>
-                <a href="#"><img src="img/apple-png--2x.png" alt="apple"></a>
-            </li>
-            <li>
-                <a href="#"><img src="img/google-png--2x.png" alt="google-play"></a>
-            </li>
+            <?php
+            foreach ($data['iconApp'] as $iconAppItem) {
+                ?>
+                <li>
+                    <a href="<?php echo $iconAppItem['url']; ?>"><img src="<?php echo $iconAppItem['src']; ?>"
+                                                                      alt="<?php echo $iconAppItem['alt']; ?>"></a>
+                </li>
+                <?php
+            }
+            ?>
         </ul>
     </div>
 </div>
@@ -273,29 +290,25 @@ $data = require 'data.php';
         <div class="container">
             <nav>
                 <ul class="footer-navigation-items clearfix">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">events</a></li>
-                    <li><a href="#">gallery</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">albums</a></li>
-                    <li><a href="#">pages</a></li>
+                    <?php
+                    foreach ($data['footerNavigation'] as $footerNavigationItem) {
+                        ?>
+                        <li>
+                            <a href="<?php echo $footerNavigationItem['url']; ?>"><?php echo $footerNavigationItem['title']; ?></a>
+                        </li>
+                        <?php
+                    }
+                    ?>
                 </ul>
             </nav>
-            <p>Copyright © 2009–2016 <span>cantus</span> © their respective owners. Shipped from Salem, Mass. USA.</p>
+            <p><?php echo $data['footer']; ?><span><?php echo $data['footerSpan']; ?></span><?php echo $data['footerNext']; ?></p>
         </div>
     </div>
 </footer>
 <div class="wrapper-popup">
     <div class="popup">
-        <a href="#" class="close-popup">x</a>
-        <p>As the ‘80s began, mainstream rock music was losing commercial steam, its sound growing stale.
-
-            In such a creatively stagnant environment, subgenres started to assert their dominance.
-
-            Inspired by punk’s outsider status and industrial’s eclectic instrumentation, keyboard-driven English bands
-            like Depeche Mode demonstrated a more introverted songwriting style, creating post-punk, which is also
-            described as new wave.
-        </p>
+        <a href="<?php echo $data['popup']['url']; ?>" class="close-popup"><?php echo $data['popup']['title']; ?></a>
+        <p><?php echo $data['popup']['text']; ?></p>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

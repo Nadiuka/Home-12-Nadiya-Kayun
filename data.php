@@ -364,4 +364,135 @@ return [
         'src' => 'img/history-foto.png',
         'alt' => 'history-foto',
     ],
+    'sixthHeader' => 'POPULAR',
+    'sixthHeaderSpan' => 'Songs',
+    'audio' => [
+        'src' => 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/80451631&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true'
+    ],
+    'songs' => [
+        [
+            'url' => '#',
+            'title' => 'My heart is dancing',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Good day',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Life for rent',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Hello It’s me',
+        ],
+        [
+            'url' => '#',
+            'title' => 'My heart is dancing',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Good day',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Life for rent',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Hello It’s me',
+        ],
+        [
+            'url' => '#',
+            'title' => 'My heart is dancing',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Good day',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Life for rent',
+        ],
+        [
+            'url' => '#',
+            'title' => 'Hello It’s me',
+        ],
+    ],
+    'seventhHeader' => 'Instagram',
+    'seventhHeaderSpan' => 'Feed',
+    'instagramPhotos' => [
+        [
+            'src' => 'img/instagram-foto1.png',
+            'alt' => 'instagram-foto',
+        ],
+        [
+            'src' => 'img/instagran-foto2.png',
+            'alt' => 'instagram-foto',
+        ],
+    ],
+    'moreInstagramPhotos' => [
+        [
+            'src' => 'img/instagram-foto3.png',
+            'alt' => 'instagram-foto',
+        ],
+        [
+            'src' => 'img/instagram-foto4.png',
+            'alt' => 'instagram-foto',
+        ],
+    ],
+    'downloadApp' => 'Download Our Official Apps',
+    'listening' => 'Never stop listening. Take your playlists and likes wherever you go.',
+    'iconApp' => [
+        [
+            'url' => '#',
+            'src' => 'img/apple-png--2x.png',
+            'alt' => 'apple',
+        ],
+        [
+            'url' => '#',
+            'src' => 'img/google-png--2x.png',
+            'alt' => 'google-play',
+        ],
+    ],
+    'footerNavigation' => [
+        [
+            'url' => '#',
+            'title' => 'home',
+        ],
+        [
+            'url' => '#',
+            'title' => 'events',
+        ],
+        [
+            'url' => '#',
+            'title' => 'gallery',
+        ],
+        [
+            'url' => '#',
+            'title' => 'news',
+        ],
+        [
+            'url' => '#',
+            'title' => 'albums',
+        ],
+        [
+            'url' => '#',
+            'title' => 'pages',
+        ],
+    ],
+    'footer' => 'Copyright © 2009–2016 ',
+    'footerSpan' => 'cantus',
+    'footerNext' => ' © their respective owners. Shipped from Salem, Mass. USA.',
+    'popup' => [
+        'url' => '#',
+        'title' => 'x',
+        'text' => 'As the ‘80s began, mainstream rock music was losing commercial steam, its sound growing stale.
+
+            In such a creatively stagnant environment, subgenres started to assert their dominance.
+
+            Inspired by punk’s outsider status and industrial’s eclectic instrumentation, keyboard-driven English bands
+            like Depeche Mode demonstrated a more introverted songwriting style, creating post-punk, which is also
+            described as new wave.',
+    ],
 ];
